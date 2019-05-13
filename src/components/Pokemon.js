@@ -34,16 +34,9 @@ import './Pokemon.css';
 // export default Pokemon;
 
 class Pokemon extends React.Component {
-	// constructor(props) {
-	// 	super(props);
-	// 	//Bind my methods
-	// 	this.paintItems = this.paintItems.bind(this);
-	// }
-
 	render() {
 		const { data } = this.props;
-		console.log(data);
-		// const { paintItems } = this;
+
 		return data.map((item, index) => {
 			return (
 				<div key={index} className="pokemon-card">
