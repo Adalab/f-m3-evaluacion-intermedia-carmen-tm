@@ -51,8 +51,13 @@ class Pokemon extends React.Component {
 
 		return data.map((item, index) => {
 			return (
-				<div onClick={this.handleOnClick} key={index} className="pokemon-card">
-					<img src={item.url} alt="" />
+				<div
+					onClick={this.handleOnClick}
+					title="Añádeme a tus favoritos"
+					key={index}
+					className="pokemon-card"
+				>
+					<img src={item.url} alt="Imagen de Pokemon" />
 					<h2>{item.name}</h2>
 					<ul className="pokemon-list">
 						{item.types.map((item, index2) => {

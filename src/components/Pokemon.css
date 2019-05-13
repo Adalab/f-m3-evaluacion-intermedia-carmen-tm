@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 ul {
 	list-style: none;
 }
@@ -7,16 +11,17 @@ ul {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
+	padding: 0;
 }
 
 .pokemon-card {
 	background-color: lightgray;
 	border: 1px solid grey;
 	border-radius: 20px;
-	padding: 20px;
+	padding: 10px;
 	margin: 10px;
 	text-align: center;
-	width: 150px;
+	width: 180px;
 
 	display: flex;
 	flex-direction: column;
