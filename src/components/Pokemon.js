@@ -34,12 +34,24 @@ import './Pokemon.css';
 // export default Pokemon;
 
 class Pokemon extends React.Component {
+	constructor(props) {
+		super(props);
+
+		//Binding all my methods
+		this.handleOnClick = this.handleOnClick.bind(this);
+	}
+	//My methods
+	handleOnClick(event) {
+		const { currentTarget } = event;
+		currentTarget.classList.toggle('pokemon-card--clicked');
+	}
+
 	render() {
 		const { data } = this.props;
 
 		return data.map((item, index) => {
 			return (
-				<div key={index} className="pokemon-card">
+				<div onClick={this.handleOnClick} key={index} className="pokemon-card">
 					<img src={item.url} alt="" />
 					<h2>{item.name}</h2>
 					<ul className="pokemon-list">

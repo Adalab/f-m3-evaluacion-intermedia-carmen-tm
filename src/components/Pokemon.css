@@ -23,6 +23,11 @@ ul {
 	justify-content: center;
 	align-items: center;
 	text-transform: capitalize;
+	cursor: pointer;
+}
+
+.pokemon-card--clicked {
+	background-color: coral;
 }
 
 .pokemon-type {
