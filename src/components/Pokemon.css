@@ -15,7 +15,7 @@ ul {
 }
 
 .pokemon-card {
-	background-color: lightgray;
+	background-color: lightblue;
 	border: 1px solid grey;
 	border-radius: 20px;
 	padding: 10px;
@@ -36,11 +36,19 @@ ul {
 }
 
 .pokemon-type {
-	background-color: white;
+	background-color: grey;
+	color: white;
 	padding: 5px;
 	border-radius: 5px;
 	margin: 5px;
 	display: inline-block;
 	text-transform: uppercase;
 	font-size: 9px;
+}
+
+.title-container {
+	padding: 0;
+	margin: 0;
+	border-bottom: 1px solid white;
+	border-top: 1px solid white;
 }
