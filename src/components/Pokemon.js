@@ -28,10 +28,10 @@ class Pokemon extends React.Component {
 					<div className="title-container">
 						<h2>{item.name}</h2>
 					</div>
-					<ul className="pokemon-list">
+					<ul className="pokemon-type__list">
 						{item.types.map((item, index2) => {
 							return (
-								<li className="pokemon-type" key={index2}>
+								<li className="pokemon-type__item" key={index2}>
 									{item}
 								</li>
 							);

@@ -8,14 +8,6 @@ ul {
 	list-style: none;
 }
 
-.pokemon-list {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	padding: 0;
-}
-
 .pokemon-card {
 	background-color: lightblue;
 	border: 1px solid grey;
@@ -37,7 +29,7 @@ ul {
 	background-color: coral;
 }
 
-.pokemon-type {
+.pokemon-type__item {
 	background-color: grey;
 	color: white;
 	padding: 5px;

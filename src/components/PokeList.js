@@ -6,8 +6,7 @@ class PokeList extends React.Component {
 	render() {
 		return (
 			<div>
-				<h1 className="pokelist-title">Mi lista de pokemon</h1>
-				<ul>
+				<ul className="pokemon-list">
 					<Pokemon data={this.props.data} />
 				</ul>
 			</div>

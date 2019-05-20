@@ -86,7 +86,12 @@ const pokemon = [
 ];
 
 function App() {
-	return <PokeList data={pokemon} />;
+	return (
+		<div>
+			<h1 className="pokelist-title">Mi lista de pokemon</h1>
+			<PokeList data={pokemon} />;
+		</div>
+	);
 }
 
 export default App;
