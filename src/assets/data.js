@@ -1,4 +1,4 @@
-const pokemon = [
+const pokemonArr = [
 	{
 		id: 1,
 		name: 'bulbasaur',
@@ -81,4 +81,4 @@ const pokemon = [
 	}
 ];
 
-export default pokemon;
+export default pokemonArr;

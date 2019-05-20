@@ -17,6 +17,7 @@ ul {
 		#accee3,
 		#689cad
 	);
+
 	color: #213941;
 	border-radius: 20px;
 	padding: 10px;
@@ -31,9 +32,19 @@ ul {
 	text-transform: capitalize;
 	cursor: pointer;
 }
-
+/* img {
+	transition: background-image 3s ease-in-out;
+} */
 .pokemon-card--clicked {
-	background-color: coral;
+	/* background-color: #ff7f50;
+	 */
+	background-image: linear-gradient(
+		to bottom,
+		#f9e0fa,
+		#ffbadb,
+		#ff969f,
+		#ff7f50
+	);
 }
 
 .pokemon-type__item {
