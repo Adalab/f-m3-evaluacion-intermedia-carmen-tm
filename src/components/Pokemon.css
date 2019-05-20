@@ -9,13 +9,20 @@ ul {
 }
 
 .pokemon-card {
-	background-color: lightblue;
-	border: 1px solid grey;
+	/* background-color: #86c0d3; */
+	background-image: linear-gradient(
+		to bottom,
+		#eaedf6,
+		#cedcee,
+		#accee3,
+		#689cad
+	);
+	color: #213941;
 	border-radius: 20px;
 	padding: 10px;
 	margin: 10px;
 	text-align: center;
-	width: 180px;
+	width: 160px;
 
 	display: flex;
 	flex-direction: column;
@@ -30,8 +37,8 @@ ul {
 }
 
 .pokemon-type__item {
-	background-color: grey;
-	color: white;
+	background-color: white;
+	color: #213941;
 	padding: 5px;
 	border-radius: 5px;
 	margin: 5px;
@@ -41,8 +48,8 @@ ul {
 }
 
 .title-container {
-	padding: 5px;
+	padding: 3px;
 	margin-bottom: 5px;
-	border-bottom: 1px solid white;
-	border-top: 1px solid white;
+	border-bottom: 3px solid white;
+	border-top: 3px solid white;
 }

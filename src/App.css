@@ -2,11 +2,16 @@
 	text-align: center;
 }
 
-.pokelist-title {
-	padding: 20px;
-	font-size: 22px;
-	color: coral;
+.App-header {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.pokelist-title {
+	/* padding: 20px;
+	font-size: 22px;
+	color: #213941; */
+	height: 50px;
+	margin: 20px;
 }
