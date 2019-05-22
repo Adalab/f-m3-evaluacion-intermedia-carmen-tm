@@ -1,12 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Pokemon.css';
-class Pokemon extends React.Component {
-	constructor(props) {
-		super(props);
 
-		//Binding all my methods
-		this.handleOnClick = this.handleOnClick.bind(this);
-	}
+class Pokemon extends React.Component {
 	//My methods
 	handleOnClick(event) {
 		const { currentTarget } = event;
@@ -15,15 +11,9 @@ class Pokemon extends React.Component {
 
 	render() {
 		const { data } = this.props;
-
-		return data.map((item, index) => {
+		return data.map(item => {
 			return (
-				<div
-					onClick={this.handleOnClick}
-					title="Añádeme a tus favoritos"
-					key={index}
-					className="pokemon-card"
-				>
+				<article className="pokemon-card" onClick={this.handleOnClick}>
 					<img src={item.url} alt="Imagen de Pokemon" />
 					<div className="title-container">
 						<h2>{item.name}</h2>
@@ -37,35 +27,13 @@ class Pokemon extends React.Component {
 							);
 						})}
 					</ul>
-				</div>
+				</article>
 			);
 		});
-
-		// return data.map((item, index) => {
-		// 	return (
-		// 		<div
-		// 			onClick={this.handleOnClick}
-		// 			title="Añádeme a tus favoritos"
-		// 			key={index}
-		// 			className="pokemon-card"
-		// 		>
-		// 			<img src={item.url} alt="Imagen de Pokemon" />
-		// 			<div className="title-container">
-		// 				<h2>{item.name}</h2>
-		// 			</div>
-		// 			<ul className="pokemon-type__list">
-		// 				{item.types.map((item, index2) => {
-		// 					return (
-		// 						<li className="pokemon-type__item" key={index2}>
-		// 							{item}
-		// 						</li>
-		// 					);
-		// 				})}
-		// 			</ul>
-		// 		</div>
-		// 	);
-		// });
 	}
 }
 
+Pokemon.propTypes = {
+	data: PropTypes.arrayOf(PropTypes.object).isRequired
+};
 export default Pokemon;
