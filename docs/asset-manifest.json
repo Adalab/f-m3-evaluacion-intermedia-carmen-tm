@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "./static/css/main.1d2895fd.chunk.css",
-    "main.js": "./static/js/main.d0902ad0.chunk.js",
-    "main.js.map": "./static/js/main.d0902ad0.chunk.js.map",
+    "main.css": "./static/css/main.4b2efa5d.chunk.css",
+    "main.js": "./static/js/main.5db1145b.chunk.js",
+    "main.js.map": "./static/js/main.5db1145b.chunk.js.map",
     "runtime~main.js": "./static/js/runtime~main.d653cc00.js",
     "runtime~main.js.map": "./static/js/runtime~main.d653cc00.js.map",
-    "static/js/2.7cddf10a.chunk.js": "./static/js/2.7cddf10a.chunk.js",
-    "static/js/2.7cddf10a.chunk.js.map": "./static/js/2.7cddf10a.chunk.js.map",
+    "static/js/2.652dea17.chunk.js": "./static/js/2.652dea17.chunk.js",
+    "static/js/2.652dea17.chunk.js.map": "./static/js/2.652dea17.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.cd6103ba8d78d61b99bf5f807337ade7.js": "./precache-manifest.cd6103ba8d78d61b99bf5f807337ade7.js",
+    "precache-manifest.ee820882195f1c648f3514efdef1012a.js": "./precache-manifest.ee820882195f1c648f3514efdef1012a.js",
     "service-worker.js": "./service-worker.js",
-    "static/css/main.1d2895fd.chunk.css.map": "./static/css/main.1d2895fd.chunk.css.map"
+    "static/css/main.4b2efa5d.chunk.css.map": "./static/css/main.4b2efa5d.chunk.css.map",
+    "static/media/AppPokemonTitle.png": "./static/media/AppPokemonTitle.e541c0a9.png"
   }
 }
