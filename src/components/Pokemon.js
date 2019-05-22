@@ -1,46 +1,32 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Pokemon.css';
-class Pokemon extends React.Component {
-	constructor(props) {
-		super(props);
 
-		//Binding all my methods
-		this.handleOnClick = this.handleOnClick.bind(this);
-	}
-	//My methods
-	handleOnClick(event) {
-		const { currentTarget } = event;
-		currentTarget.classList.toggle('pokemon-card--clicked');
-	}
+const Pokemon = props => {
+	const { url, name, types, methodOnChange } = props;
+	return (
+		<article className="pokemon-card" onClick={methodOnChange}>
+			<img src={url} alt={name} />
+			<div className="title-container">
+				<h2>{name}</h2>
+			</div>
+			<ul className="pokemon-type__list">
+				{types.map((item, index) => {
+					return (
+						<li className="pokemon-type__item" key={index}>
+							{item}
+						</li>
+					);
+				})}
+			</ul>
+		</article>
+	);
+};
 
-	render() {
-		const { data } = this.props;
-
-		return data.map((item, index) => {
-			return (
-				<div
-					onClick={this.handleOnClick}
-					title="Añádeme a tus favoritos"
-					key={index}
-					className="pokemon-card"
-				>
-					<img src={item.url} alt="Imagen de Pokemon" />
-					<div className="title-container">
-						<h2>{item.name}</h2>
-					</div>
-					<ul className="pokemon-type__list">
-						{item.types.map((item, index2) => {
-							return (
-								<li className="pokemon-type__item" key={index2}>
-									{item}
-								</li>
-							);
-						})}
-					</ul>
-				</div>
-			);
-		});
-	}
-}
-
+Pokemon.propTypes = {
+	url: PropTypes.string.isRequired,
+	name: PropTypes.string.isRequired,
+	types: PropTypes.arrayOf(PropTypes.string).isRequired,
+	methodOnChange: PropTypes.func.isRequired
+};
 export default Pokemon;
