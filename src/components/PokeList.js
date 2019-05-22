@@ -10,7 +10,12 @@ const PokeList = props => {
 			{data.map(item => {
 				return (
 					<li key={item.id} title="Añádeme a tus favoritos">
-						<Pokemon data={data} methodOnChange={methodOnChange} />
+						<Pokemon
+							url={item.url}
+							name={item.name}
+							types={item.types}
+							methodOnChange={methodOnChange}
+						/>
 					</li>
 				);
 			})}
