@@ -4,13 +4,13 @@ import PropTypes from 'prop-types';
 import './PokeList.css';
 
 const PokeList = props => {
-	const { data } = props;
+	const { data, methodOnChange } = props;
 	return (
 		<ul className="pokemon-list">
 			{data.map(item => {
 				return (
 					<li key={item.id} title="Añádeme a tus favoritos">
-						<Pokemon data={data} />
+						<Pokemon data={data} methodOnChange={methodOnChange} />
 					</li>
 				);
 			})}
@@ -19,7 +19,8 @@ const PokeList = props => {
 };
 
 PokeList.propTypes = {
-	data: PropTypes.arrayOf(PropTypes.object).isRequired
+	data: PropTypes.arrayOf(PropTypes.object).isRequired,
+	methodOnChange: PropTypes.func.isRequired
 };
 
 export default PokeList;
